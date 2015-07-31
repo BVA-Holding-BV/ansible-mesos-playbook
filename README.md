@@ -1,3 +1,13 @@
+Note:
+
+The documentation below was the original documentation. it needs to be updated to reflect the latest changes/additions.
+
+Basically, you can start various mesos clusters using the vagrant machines in the vagrant directory. Currently the only implementation is a single node that contains both master and slave.
+
+usage:
+vagrant up
+
+
 ansible-mesos-playbook
 ======================
 
@@ -17,7 +27,7 @@ An ansible playbook for launching a mesos cluster with native docker and mesos e
 
 * zookeeper, haproxy, mesos-master, consul and marathon with ha mode run on nodes in the mesos_primaries group. The zoo_id host variable is used to configure zookeeper, and consul_bootstrap is set on one node to initialize the cluster.
 * mesos-slave runs in the mesos_workers group and are passed the list of mesos_primaries for coordination.
-* Docker and native mesos are configured as containerizers on mesos-slaves. 
+* Docker and native mesos are configured as containerizers on mesos-slaves.
 * A cron job on each master is set up to query the marathon api and configure HAProxy.
 * HAProxy routes a frontend (listening on port 80) to backends based on marathon tasks.
 * Consul for service discovery. It's not hooked into any other services, just part of the default setup.
@@ -28,11 +38,11 @@ An ansible playbook for launching a mesos cluster with native docker and mesos e
 There are a variety of tweaks you can make to this playbook for your needs.
 
 * Don't want Marathon, Consul or HAProxy? Simply remove roles from mesos_primaries.yml
-* Don't want to overload the primaries? Simply add new groups and remap roles appropriately. 
+* Don't want to overload the primaries? Simply add new groups and remap roles appropriately.
 
 ### Troubelshooting
 
-If you have trouble, ```/var/log/syslog``` on Ubuntu and ```/var/log/messages``` on RHEL is your friend. For Zookeeper, try ```/var/log/zookeeper/zookeeper.log```. You can try re-running the playbook; the roles aren't perfect but most are idempotent. 
+If you have trouble, ```/var/log/syslog``` on Ubuntu and ```/var/log/messages``` on RHEL is your friend. For Zookeeper, try ```/var/log/zookeeper/zookeeper.log```. You can try re-running the playbook; the roles aren't perfect but most are idempotent.
 
 Ansible lets you perform actions on groups of servers. You can try query or restart zookeeper and/or mesos:
 
@@ -43,7 +53,7 @@ $ ansible mesos_primaries -a "sudo restart zookeeper"
 
 ### Notes
 
-Currently this installs Mesos 0.20.1 with Marathon 0.7.3. 
+Currently this installs Mesos 0.20.1 with Marathon 0.7.3.
 
 ### Launching a Container
 
@@ -51,7 +61,7 @@ POST to /v2/apps:
 
 ```
 {
-    "id": "mlh", 
+    "id": "mlh",
     "container": {
         "docker": {
             "image": "mhamrah/mesos-sample",
