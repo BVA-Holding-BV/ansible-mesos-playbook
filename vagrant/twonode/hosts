@@ -1,0 +1,5 @@
+[mesos_primaries]
+mesos-2node1.local zoo_id=2 consul_bootstrap=true ansible_ssh_host=127.0.0.1 ansible_ssh_port=2223 mesos_ip=192.168.100.3
+
+[mesos_workers]
+mesos-2node2.local ansible_ssh_host=127.0.0.1 ansible_ssh_port=2224

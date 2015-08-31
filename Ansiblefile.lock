@@ -1,4 +1,11 @@
 GIT
+  remote: https://github.com/BVA-Holding-BV/ansible-mesos
+  ref: master
+  sha: 156cf2ae5e4532a03137ff3fbbd2d6fc9c8fb002
+  specs:
+    ansible-mesos (0.0.0)
+
+GIT
   remote: https://github.com/mhamrah/ansible-consul
   ref: master
   sha: 38397d7103f659e9f3944da816d6b8a3b0e26018
@@ -20,25 +27,18 @@ GIT
     ansible-java8 (0.0.0)
 
 GIT
-  remote: https://github.com/mhamrah/ansible-marathon
-  ref: master
-  sha: e1d8781e4d5f55db7aee91e8cdd39a5cf2813f36
-  specs:
-    ansible-marathon (0.0.0)
-
-GIT
-  remote: https://github.com/mhamrah/ansible-mesos
-  ref: master
-  sha: 1717eefbdda66f78d41b0aa2fc77facafb2a2b1c
-  specs:
-    ansible-mesos (0.0.0)
-
-GIT
   remote: https://github.com/mhamrah/ansible-zookeeper
   ref: master
   sha: ba4340361486b58f13d7581e9a0ba87c11ec4b49
   specs:
     ansible-zookeeper (0.0.0)
+
+GIT
+  remote: https://github.com/svefors/ansible-marathon
+  ref: master
+  sha: 8665893cff8109234b3869c302fac77677afb5ed
+  specs:
+    ansible-marathon (0.0.0)
 
 DEPENDENCIES
   ansible-consul (>= 0)
