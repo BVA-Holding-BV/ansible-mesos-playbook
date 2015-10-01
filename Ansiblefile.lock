@@ -1,7 +1,21 @@
 GIT
+  remote: https://github.com/AnsibleShipyard/ansible-chronos
+  ref: master
+  sha: ba7cf02c9ba6652bfc2f9dd6931119bac911d9e3
+  specs:
+    ansible-chronos (0.0.0)
+
+GIT
+  remote: https://github.com/AnsibleShipyard/ansible-nodejs
+  ref: master
+  sha: 34244c88ddf751c70ba1f54cfd4d0802f5ffdfba
+  specs:
+    ansible-nodejs (0.0.0)
+
+GIT
   remote: https://github.com/BVA-Holding-BV/ansible-mesos
   ref: master
-  sha: 156cf2ae5e4532a03137ff3fbbd2d6fc9c8fb002
+  sha: 8c60a4fc9b89ac0e1bf2b1cffb061743594b30c7
   specs:
     ansible-mesos (0.0.0)
 
@@ -36,15 +50,17 @@ GIT
 GIT
   remote: https://github.com/svefors/ansible-marathon
   ref: master
-  sha: 8665893cff8109234b3869c302fac77677afb5ed
+  sha: 36c3b6be6ab1be28cd12c0452f010aa32095550b
   specs:
     ansible-marathon (0.0.0)
 
 DEPENDENCIES
+  ansible-chronos (>= 0)
   ansible-consul (>= 0)
   ansible-docker (>= 0)
   ansible-java8 (>= 0)
   ansible-marathon (>= 0)
   ansible-mesos (>= 0)
+  ansible-nodejs (>= 0)
   ansible-zookeeper (>= 0)
 

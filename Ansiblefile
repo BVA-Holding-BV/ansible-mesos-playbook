@@ -15,3 +15,7 @@ role "ansible-mesos",
   github: "BVA-Holding-BV/ansible-mesos"
 role "ansible-consul",
   github: "mhamrah/ansible-consul"
+role "ansible-nodejs",
+  github: "AnsibleShipyard/ansible-nodejs"
+role "ansible-chronos",
+  github: "AnsibleShipyard/ansible-chronos"
