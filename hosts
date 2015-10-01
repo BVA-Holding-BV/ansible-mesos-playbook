@@ -1,7 +1,7 @@
 [mesos_primaries]
 mesos01.bva.nu zoo_id=1 consul_bootstrap=true
-mesos02.bva.nu zoo_id=2
-mesos03.bva.nu zoo_id=3
 
 [mesos_workers]
+mesos02.bva.nu
+mesos03.bva.nu
 mesos04.bva.nu
