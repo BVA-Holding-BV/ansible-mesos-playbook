@@ -27,9 +27,9 @@ GIT
     ansible-consul (0.0.0)
 
 GIT
-  remote: https://github.com/mhamrah/ansible-docker
+  remote: https://github.com/BVA-Holding-BV/ansible-docker
   ref: master
-  sha: 5f6cea50da4a3fb708a1fa06a7bb78c3753a2a4d
+  sha: 1812c897507d41ca517df5380beb65bf7fa805ea
   specs:
     ansible-docker (0.0.0)
 

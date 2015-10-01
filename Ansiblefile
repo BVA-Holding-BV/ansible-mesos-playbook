@@ -4,7 +4,7 @@
 site "https://galaxy.ansible.com/api/v1"
 
 role "ansible-docker",
-  github: "mhamrah/ansible-docker"
+  github: "BVA-Holding-BV/ansible-docker"
 role "ansible-java8",
   github: "mhamrah/ansible-java8"
 role "ansible-zookeeper",
